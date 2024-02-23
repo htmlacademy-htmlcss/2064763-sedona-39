@@ -25,7 +25,6 @@ body {
 
 .page-header {
   color: #333333;
-  background-color: #ffffff;
 }
 
 .navigation-link {
@@ -34,7 +33,6 @@ body {
   font-weight: 700;
   text-align: center;
   color: #000000;
-  background-color: #ffffff;
   text-decoration: none;
 }
 
@@ -49,17 +47,19 @@ body {
   background-color: #756157;
 }
 
+.favorites-counter {
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+}
+
 .hero {
   background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto, cover;
   background-position: left bottom, left top;
   background-color: #446e6b;
-  text-align: center;
-}
-
-.advantages {
-  background-color: #ffffff;
 }
 
 .advantages-heading {
@@ -109,10 +109,6 @@ body {
   background-color: #83b3d333;
 }
 
-.services {
-  background-color: #ffffff;
-}
-
 .services-heading {
   font-size: 30px;
   line-height: 36px;
@@ -150,7 +146,6 @@ body {
 }
 
 .search {
-  background-color: #ffffff;
   text-align: center;
 }
 
@@ -173,7 +168,6 @@ body {
 
 .subscribe {
   color: #ffffff;
-  text-align: center;
   background-image: url("../images/subscribe-background.jpg");
   background-size: cover;
   background-position: left top;
@@ -201,7 +195,6 @@ body {
 
 .page-footer {
   color: #000000;
-  background-color: #ffffff;
 }
 
 .social-link {
@@ -245,10 +238,6 @@ body {
   color: #ffffff;
 }
 
-.breadcrumbs-list {
-  color: #ffffff;
-}
-
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -259,6 +248,7 @@ body {
 .hotels-filter-title {
   font-size: 20px;
   line-height: 24px;
+  font-weight: 700;
   color: #ffffff;
 }
 
