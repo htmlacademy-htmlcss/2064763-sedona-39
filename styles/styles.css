@@ -39,8 +39,8 @@ body {
 .button {
   font-family: inherit;
   font-size: 16px;
-  font-weight: 700;
   line-height: 20px;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
@@ -312,7 +312,7 @@ body {
   color: #333333;
 }
 
-.raiting {
+.catalog-item .raiting {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
