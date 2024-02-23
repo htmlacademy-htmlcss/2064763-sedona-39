@@ -278,10 +278,6 @@ body {
   background-color: transparent;
 }
 
-.catalog {
-  background-color: #ffffff;
-}
-
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
@@ -335,10 +331,6 @@ body {
 
 .button-to-favorites {
   background-color: #82b3d3;
-}
-
-.pagination {
-  background-color: #ffffff;
 }
 
 .pagination-link {
