@@ -76,15 +76,18 @@ body {
   text-align: center;
 }
 
-.advantages-list {
-  text-align: center;
-}
-
 .advantages-item-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  text-align: center;
+}
+
+.advantages-item-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
 }
 
 .advantages-item:nth-child(1),
@@ -190,6 +193,8 @@ body {
 }
 
 .button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82b3d3;
 }
 
@@ -299,11 +304,13 @@ body {
 }
 
 .catalog-link {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
   color: #000000;
   text-decoration: none;
+}
+
+.catalog-link h3 {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .catalog-item p {
@@ -347,6 +354,8 @@ body {
 }
 
 .pagination-text {
+  font-size: 22px;
+  line-height: 26px;
   color: #000000;
   background-color: transparent;
 }
