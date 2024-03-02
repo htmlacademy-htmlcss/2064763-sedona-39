@@ -63,7 +63,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
 }
 
@@ -112,7 +112,6 @@ body {
 
 .hero-image {
   display: block;
-  margin: 0 auto;
 }
 
 .advantages-heading {
@@ -339,6 +338,10 @@ body {
   font-weight: 700;
   color: #ffffff;
   text-transform: capitalize;
+}
+
+.filter-hotels-list {
+  color: #ffffff;
 }
 
 .filter-hotels-item .control {
