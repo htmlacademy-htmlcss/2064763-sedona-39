@@ -61,7 +61,7 @@
           <section class="hotels-filter" data-test="filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
             <form class="hotels-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="hotels-filter-group">
+              <fieldset class="hotels-filter-group hotels-filter-infrastructure">
                 <legend class="hotels-filter-title">Инфраструктура:</legend>
                 <ul class="filter-hotels-list">
                   <li class="filter-hotels-item">
@@ -84,7 +84,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotels-filter-group">
+              <fieldset class="hotels-filter-group hotels-filter-housing">
                 <legend class="hotels-filter-title">Тип Жилья:</legend>
                 <ul class="filter-hotels-list">
                   <li class="filter-hotels-item">
@@ -107,7 +107,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotels-filter-group">
+              <fieldset class="hotels-filter-group cost-control-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
                 <label class="control">
                   <input class="cost-input" type="number" name="min-cost" value="0">От
@@ -122,35 +122,39 @@
                   <span>Изменение цены в большую сторону</span>
                 </button>
               </fieldset>
-              <button class="button button-catalog-sumbit" type="submit">Применить</button>
-              <button class="button button-catalog-reset" type="reset">Сбросить</button>
+              <div class="sorting-button-containter">
+                <button class="button button-catalog-sumbit" type="submit">Применить</button>
+                <button class="button button-catalog-reset" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
         <section class="catalog" data-test="catalog">
-          <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-          <select class="catalog-select" aria-label="Сортировка гостиниц">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="best-rating">С лучшим рейтингом</option>
-          </select>
-          <ul class="view-toggle-list">
-            <li class="view-toggle-item">
-              <a class="view-toggle-link" href="#">
-                <span class="visually-hidden">Показ в виде карточек</span>
-              </a>
-            </li>
-            <li class="view-toggle-item">
-              <a class="view-toggle-link" href="#">
-                <span class="visually-hidden">Показ в виде галереи</span>
-              </a>
-            </li>
-            <li class="view-toggle-item">
-              <a class="view-toggle-link" href="#">
-                <span class="visually-hidden">Показ в виде списка</span>
-              </a>
-            </li>
-          </ul>
+          <div class="catalog-settings-wrapper">
+            <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+            <select class="catalog-select" aria-label="Сортировка гостиниц">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="best-rating">С лучшим рейтингом</option>
+            </select>
+            <ul class="view-toggle-list">
+              <li class="view-toggle-item">
+                <a class="view-toggle-link" href="#">
+                  <span class="visually-hidden">Показ в виде карточек</span>
+                </a>
+              </li>
+              <li class="view-toggle-item">
+                <a class="view-toggle-link" href="#">
+                  <span class="visually-hidden">Показ в виде галереи</span>
+                </a>
+              </li>
+              <li class="view-toggle-item">
+                <a class="view-toggle-link" href="#">
+                  <span class="visually-hidden">Показ в виде списка</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <ul class="catalog-list">
             <li class="catalog-item">
               <a class="catalog-link" href="#">
@@ -241,7 +245,7 @@
         <section class="subscribe subscribe-inner" data-test="subscribe">
           <h2 class="subscribe-inner-heading">Подпишитесь на рассылку</h2>
           <p class="subscribe-inner-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email-field">Ваш e-mail</label>
             <input class="subscribe-input" placeholder="Ваш e-mail" type="email" name="email-field" id="email-field"
               required>
