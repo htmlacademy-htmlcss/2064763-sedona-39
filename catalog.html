@@ -12,7 +12,8 @@
       <header class="page-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
-            <img class="navigation-logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип сайта о Седоне">
+            <img class="navigation-logo-image" src="images/logo.svg" width="140" height="70"
+              alt="Логотип сайта о Седоне">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -109,12 +110,14 @@
               </fieldset>
               <fieldset class="hotels-filter-group cost-control-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-                <label class="control">
-                  <input class="cost-input" type="number" name="min-cost" value="0">От
-                </label>
-                <label class="control">
-                  <input class="cost-input" type="number" name="max-cost" value="9000">До
-                </label>
+                <div class="cost-input-wrapper">
+                  <label class="control">
+                    <input class="cost-input cost-input-left" type="number" name="min-cost" value="0">От
+                  </label>
+                  <label class="control">
+                    <input class="cost-input cost-input-right" type="number" name="max-cost" value="9000">До
+                  </label>
+                </div>
                 <button class="min-cost-control" type="button">
                   <span>Изменение цены в меньшую сторону</span>
                 </button>
@@ -247,8 +250,8 @@
           <p class="subscribe-inner-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email-field">Ваш e-mail</label>
-            <input class="subscribe-input" placeholder="Ваш e-mail" type="email" name="email-field" id="email-field"
-              required>
+            <input class="subscribe-input subscribe-input-inner" placeholder="Ваш e-mail" type="email"
+              name="email-field" id="email-field" required>
             <button class="button button-subscribe" type="submit">Подписаться</button>
           </form>
         </section>
