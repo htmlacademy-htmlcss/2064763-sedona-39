@@ -49,7 +49,7 @@
             <nav class="breacrumbs">
               <ol class="breadcrumbs-list">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">
+                  <a class="breadcrumbs-link breadcrumb-link-index" href="index.html">
                     <span class="visually-hidden">Главная</span>
                   </a>
                 </li>
@@ -66,22 +66,16 @@
                 <legend class="hotels-filter-title">Инфраструктура:</legend>
                 <ul class="filter-hotels-list">
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="pool" checked>
-                      Бассейн
-                    </label>
+                    <input class="control-input" id="pool-choice" type="checkbox" name="pool" checked>
+                    <label class="control" for="pool-choice">Бассейн</label>
                   </li>
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
-                    </label>
+                    <input class="control-input" id="parking-choice" type="checkbox" name="parking" checked>
+                    <label class="control" for="parking-choice">Парковка</label>
                   </li>
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="checkbox" name="wifi">
-                      Wi-Fi
-                    </label>
+                    <input class="control-input" id="wifi-choice" type="checkbox" name="wifi">
+                    <label class="control" for="wifi-choice">Wi-Fi</label>
                   </li>
                 </ul>
               </fieldset>
@@ -89,34 +83,26 @@
                 <legend class="hotels-filter-title">Тип Жилья:</legend>
                 <ul class="filter-hotels-list">
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
-                      Гостиница
-                    </label>
+                    <input class="control-input" id="housing-choice" type="radio" name="hotel-type" value="hotel" checked>
+                    <label class="control" for="housing-choice">Гостиница</label>
                   </li>
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="hotel-type" value="motel">
-                      Мотель
-                    </label>
+                    <input class="control-input" id="motel-choice" type="radio" name="hotel-type" value="motel">
+                    <label class="control" for="motel-choice">Мотель</label>
                   </li>
                   <li class="filter-hotels-item">
-                    <label class="control">
-                      <input class="control-input" type="radio" name="hotel-type" value="apartments">
-                      Апартаменты
-                    </label>
+                    <input class="control-input" id="apartments-choice" type="radio" name="hotel-type" value="apartments">
+                    <label class="control" for="apartments-choice">Апартаменты</label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="hotels-filter-group cost-control-group">
                 <legend class="hotels-filter-title">Стоимость, ₽:</legend>
                 <div class="cost-input-wrapper">
-                  <label class="control">
-                    <input class="cost-input cost-input-left" type="number" name="min-cost" value="0">От
-                  </label>
-                  <label class="control">
-                    <input class="cost-input cost-input-right" type="number" name="max-cost" value="9000">До
-                  </label>
+                  <label class="control control-cost-left" for="cost-left">От</label>
+                  <input class="cost-input cost-input-left" id="cost-left" type="number" name="min-cost" value="0">
+                  <label class="control control-cost-right" for="cost-right">До</label>
+                  <input class="cost-input cost-input-right" id="cost-right" type="number" name="max-cost" value="9000">
                 </div>
                 <button class="min-cost-control" type="button">
                   <span>Изменение цены в меньшую сторону</span>
@@ -142,17 +128,17 @@
             </select>
             <ul class="view-toggle-list">
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">
+                <a class="view-toggle-link view-toggle-link-card" href="#">
                   <span class="visually-hidden">Показ в виде карточек</span>
                 </a>
               </li>
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">
+                <a class="view-toggle-link view-toggle-link-gallery" href="#">
                   <span class="visually-hidden">Показ в виде галереи</span>
                 </a>
               </li>
               <li class="view-toggle-item">
-                <a class="view-toggle-link" href="#">
+                <a class="view-toggle-link view-toggle-link-list" href="#">
                   <span class="visually-hidden">Показ в виде списка</span>
                 </a>
               </li>
@@ -160,7 +146,7 @@
           </div>
           <ul class="catalog-list">
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-img" href="#">
+              <a class="catalog-link catalog-link-image" href="#">
                 <img src="images/hotel-1.jpg" width="300" height="212" alt="Горы и ночное небо">
               </a>
               <a class="catalog-link catalog-link-name" href="#" tabindex="-1">
@@ -170,13 +156,13 @@
               <p class="catalog-price">От 4000 ₽</p>
               <a class="button link-to-details" href="#">Подробнее</a>
               <button class="button button-to-favorites" type="button">В избранное</button>
-              <p>
+              <p class="four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="raiting">Рейтинг: 8,5</p>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-img" href="#">
+              <a class="catalog-link catalog-link-image" href="#">
                 <img src="images/hotel-2.jpg" width="300" height="212" alt="Закат и радуга над горами">
               </a>
               <a class="catalog-link catalog-link-name" href="#" tabindex="-1">
@@ -186,13 +172,13 @@
               <p class="catalog-price">От 5000 ₽</p>
               <a class="button link-to-details" href="#">Подробнее</a>
               <button class="button catalog-button-selected" type="button">В избранном</button>
-              <p>
+              <p class="four-stars">
                 <span class="visually-hidden">4 звезды</span>
               </p>
               <p class="raiting">Рейтинг: 9,2</p>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-img" href="#">
+              <a class="catalog-link catalog-link-image" href="#">
                 <img src="images/hotel-3.jpg" width="300" height="212" alt="Вид гор в дневное время">
               </a>
               <a class="catalog-link catalog-link-name" href="#" tabindex="-1">
@@ -202,13 +188,13 @@
               <p class="catalog-price">От 2500 ₽</p>
               <a class="button link-to-details" href="#">Подробнее</a>
               <button class="button button-to-favorites" type="button">В избранное</button>
-              <p>
+              <p class="three-stars">
                 <span class="visually-hidden">3 звезды</span>
               </p>
               <p class="raiting">Рейтинг: 6,9</p>
             </li>
             <li class="catalog-item">
-              <a class="catalog-link catalog-link-img" href="#">
+              <a class="catalog-link catalog-link-image" href="#">
                 <img src="images/hotel-4.jpg" width="300" height="212" alt="Звездное небо над горами">
               </a>
               <a class="catalog-link catalog-link-name" href="#" tabindex="-1">
@@ -218,7 +204,7 @@
               <p class="catalog-price">От 1500 ₽</p>
               <a class="button link-to-details" href="#">Подробнее</a>
               <button class="button button-to-favorites" type="button">В избранное</button>
-              <p>
+              <p class="two-stars">
                 <span class="visually-hidden">2 звезды</span>
               </p>
               <p class="raiting">Рейтинг: 5,0</p>
@@ -226,7 +212,7 @@
           </ul>
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-current" href="#">1</a>
+              <a class="pagination-link pagination-link-current" tabindex="-1" href="#">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
