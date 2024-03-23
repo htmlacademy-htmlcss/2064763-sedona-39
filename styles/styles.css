@@ -121,12 +121,11 @@ body {
 .navigation-link-current::before {
   content: "";
   height: 2px;
-  width: calc(100% - 36px);
   background-color: #756257;
   position: absolute;
   bottom: -1px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 16px;
+  left: 16px;
 }
 
 .navigation-search::before {
@@ -290,7 +289,7 @@ body {
 }
 
 .advantages-text {
-  margin: 0 auto 70px;
+  margin: 0 auto 90px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
