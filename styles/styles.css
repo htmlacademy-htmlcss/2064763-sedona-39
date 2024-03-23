@@ -346,7 +346,7 @@ body {
 
 .advantages-item {
   width: 400px;
-  min-height: 385px;
+  min-height: 384px;
   padding: 113px 85px;
   flex-grow: 1;
 }
@@ -560,6 +560,7 @@ body {
 }
 
 .subscribe-input {
+  width: 452px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -604,6 +605,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .social-list {
@@ -1171,7 +1173,7 @@ input[type=number] {
 .catalog-list {
   padding: 0;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -1323,11 +1325,13 @@ input[type=number] {
 
 .pagination {
   padding: 0;
+  padding-top: 40px;
   margin: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  border-top: 2px solid #e6e6e6;
 }
 
 .pagination-item {
@@ -1394,6 +1398,8 @@ input[type=number] {
 }
 
 .subscribe-inner-heading {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -1401,6 +1407,8 @@ input[type=number] {
 }
 
 .subscribe-inner-text {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
 }
