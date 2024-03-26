@@ -894,10 +894,13 @@ body {
   opacity: 30%;
 }
 
-.control-input:focus-visible,
-.control-input:focus-visible + .control {
+.control-input:focus-visible {
   outline: 3px solid #83b3d3;
   outline-offset: -1px;
+}
+
+.control-input:focus-visible + .control {
+  outline: none;
 }
 
 .control-input:disabled,
