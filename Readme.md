@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Дарья Зотова](https://up.htmlacademy.ru/htmlcss/39/user/2064763).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Проект: [Седона](https://whysoviolet.github.io/2064763-sedona-39/).
 
 ---
 
